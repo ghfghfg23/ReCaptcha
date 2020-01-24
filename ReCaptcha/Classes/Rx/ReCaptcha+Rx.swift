@@ -8,6 +8,7 @@
 
 import RxSwift
 import UIKit
+import ReCaptcha
 
 /// Makes ReCaptcha compatible with RxSwift extensions
 extension ReCaptcha: ReactiveCompatible {}

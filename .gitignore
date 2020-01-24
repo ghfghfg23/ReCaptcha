@@ -54,3 +54,8 @@ fastlane/test_output
 
 ## VS Code
 .vscode
+
+## SwiftPM
+.build/
+.swiftpm
+Package.resolved
