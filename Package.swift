@@ -9,13 +9,13 @@ let package = Package(
     ],
     products: [
         .library(name: "ReCaptcha", targets: ["ReCaptcha"]),
-        .library(name: "ReCaptcha_RxSwift", targets: ["ReCaptcha", "ReCaptcha_RxSwift"]),
+        .library(name: "ReCaptcha_RxSwift", targets: ["ReCaptcha_RxSwift"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/ReactiveX/RxSwift.git", from: "5.0.0")
+        .package(url: "https://github.com/ReactiveX/RxSwift.git", from: "4.0.0")
     ],
     targets: [
         .target(name: "ReCaptcha", dependencies: [], path: "ReCaptcha/Classes/", exclude: ["Rx"]),
-        .target(name: "ReCaptcha_RxSwift", dependencies: ["RxSwift"], path: "ReCaptcha/Classes/Rx")
+        .target(name: "ReCaptcha_RxSwift", dependencies: ["RxSwift", "ReCaptcha"], path: "ReCaptcha/Classes/Rx")
     ]
 )
